@@ -19,19 +19,22 @@ class Types_and_Strings:
         print(aa)
 
         # print only first and last of the sentence:
-        print(message[0])
-        print(message[-1])
+        print("First character: " + message[0])
+        print("Last character: " + message[-1])
 
         # use slice notation:
-        print(message[:5])
+        print("Print up to position 5: " + message[:5])
+        print("Print from position 3: " + message[3:])
+        print("Print everything via slice: " + message[:])
 
         # escaping a character:
         print(aa[0:28:2])
+        print("He said \“that\’s fantastic\”!")
 
         # find all a's in the input word and count how many there are:
         print(message.find("a"))
         print(message.count("a"))
-        print(message.count())
+
 
         # replace all occurences of the character a with the - sign
         # try this first by assignment of a location in a string and
@@ -53,6 +56,10 @@ class Types_and_Strings:
         print("Updated List: ", my_list)
 
         # remove from the list in 3 ways:
+        print(my_list.pop())
+        #print(my_list.remove("cake"))
+        del my_list[-1:-2]
+        print(my_list)
 
 
 
